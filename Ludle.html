@@ -1,0 +1,292 @@
+<html>
+<head>
+    <title>Ludle</title>
+
+
+<!--                                    _/~\
+                                       |oo )
+                      * R2-D2          _\=/_    * C3-PO
+                       ___            /  _  \
+                      / ()\          //|/.\|\\
+                    _|_____|_       ||  \_/  ||
+                   | | === | |      || |\•/| ||
+                   |_|  O  |_|       # \_ _/  #
+                    ||  O  ||          | | |
+                    ||__*__||          | | |
+                   |~ \___/ ~|         []|[]
+                   /=\ /=\ /=\         | | |
+   ________________[_]_[_]_[_]________/_]_[_\______________________-->
+
+
+</head>
+<body>
+     <center>
+       <div class="Ludle" id="LudleText">
+         <h1 style="font-size: 100px; margin-top: 100px;"><span style="color: blue">L</span><span style="color: red;">u</span><span style="color: orange;">d</span><span style="color: green">l</span><span style="color: red">e</span>
+         </h1>
+       </div>
+     </center>
+      <div class="search-bar">
+        <input type="text" name="search" value="" autocomplete="on" id="myinput" onkeyup="searchFunction()" placeholder="Search for...">
+      </div><button onclick="Thystuffs()">Feeling Fancy?</button>
+
+      <ul id="wrapper">
+        <li><a href="http://lucangevare.000webhostapp.com/index.html">Website</a></li>
+        <li><a href="file:///Users/saskyaa/Desktop/Belangrijk/Programmeren/python/Speech%202.py" download>Speech Recog</a></li>
+        <li><a href="file:///Users/saskyaa/Desktop/Belangrijk/Programmeren/python/say.py" download>T to S</a></li>
+        <li><a href="file:///Users/saskyaa/Desktop/Belangrijk/Programmeren/C/program.c" download>Hello, world!</a></li>
+        <li><a href="file:///Users/saskyaa/Desktop/Belangrijk/Programmeren/HTML/Game/Trump/Game.html">Game.js</a></li>
+        <li><a href="file:///Users/saskyaa/Desktop/Belangrijk/Programmeren/HTML/ColdCases.map/Quiz.html">Quiz.html</a></li>
+        <li><a href="file:///Users/saskyaa/Desktop/Belangrijk/Programmeren/python/Bixby%20Sarvanexa%20Assistiri/Bixby%20Sarvana%20Assistiri%202.py" download>Assistiri</a></li>
+        <li><a href="#">Demo Cell</a></li>
+        <li><a href="https://www.instagram.com/lucangevare/" target="_blank">Instagram</a></li>
+      </ul>
+    <style>
+        .search-bar {
+  position: fixed;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 344px;
+  height: 48px;
+  background: #fff;
+  border-radius: 2px;
+  top: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  cursor: auto;
+  margin-top: 5 00px;
+}
+
+.Ludle {
+  transform: rotate(0deg);
+  transition: 2.5s ease;
+  cursor: default;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.Ludle:hover {
+  transform: rotate(540deg);
+  transition: 2.5s ease;
+}
+
+input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+  left: 172px;
+  margin: 4px 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: auto;
+}
+
+
+
+button {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    -webkit-border-radius: 2px;
+    -webkit-user-select: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 16px;
+    text-align: center;
+    margin-top: -215px;
+    margin-left: 580px;
+    position: absolute;
+
+}
+
+button:hover {
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+ul#wrapper {
+  list-style: none;
+  margin-top: 100px;
+}
+
+a {
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px;
+  border: 1px solid #A7B9C3;
+  border-radius: 50%;
+  background: #FCFBE3;
+  background: linear-gradient(top, rgba(231,241,249,1) 0%,rgba(200,215,226,1) 100%);
+  box-shadow: 0 5px 15px -1px rgba(0,0,0, 1);
+  color: #00FF00;
+  text-align: center;
+   text-shadow: 0 1px 0 #fff;
+  font-size: 22px;
+  line-height: 40px;
+  cursor: pointer;
+
+}
+
+a:active {
+  border-color: #2FAA4C;
+  background: #2ED053;
+  background: linear-gradient(top, rgba(28,169,58,1) 0%,rgba(77,230,116,1) 100%);
+  box-shadow: inset 0 1px 3px -1px rgba(0,0,0, .7);
+  color: #fff;
+  text-shadow: 0 1px 0 #2B9F45;
+  transition: none;
+}
+
+a {
+  font-size: 24px;
+  color: darkblue;
+  line-height: 100px;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+a:hover {
+    animation: 0.8s HOVERTHINGY;
+}
+
+@keyframes HOVERTHINGY {
+    0% {
+        color: darkblue;
+    }
+
+    100% {
+        color: #228B22
+;
+    }
+}
+</style>
+<canvas id=pane width="300" height="100"></canvas>
+    <script>
+        function searchFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myinput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById('wrapper');
+    li = ul.getElementsByTagName('li');
+
+    for(i=0 ; i< li.length; i++){
+        a = li[i].getElementsByTagName('a')[0];
+        if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
+            li[i].style.display = "";
+        }
+
+        else{
+            li[i].style.display = 'none';
+      }
+    }
+  }
+  function Thystuffs() {
+    var CANVAS_BREEDTE = 2000;
+     var CANVAS_HOOGTE = 1000;
+     var canvas = document.getElementById('canvas');
+     var ctx = canvas.getContext('2d');
+     canvas.width = CANVAS_BREEDTE;
+     canvas.height = CANVAS_HOOGTE;
+
+    var images = new Image();
+    var x = Math.floor(Math.random() * 700);
+    var y = Math.floor(Math.random() * 1280);
+
+      function Images() {
+       var image = Math.floor(Math.random() * 8);
+       var Timer = setTimeout(function(){
+           var ID = 1;
+           Images()
+        },2000);
+
+        if (ID >= 5) {
+          clearTimeout(Timer)
+          return "I won't crash your browser... 4 now!"
+        }
+
+
+      images.onload = function(){
+        ctx.drawImage(images, x, y);
+        }
+
+        if (image <= 0) {
+          images.src = "https://www.calve.nl/wp-content/uploads/2018/06/Pindakaasreep-Karamel-zeezout-663x747.png";
+
+       } else if (image == 1) {
+          images.src = "https://groentegroente.nl/wp-content/uploads/Andijvie-1-S-D-698-1.jpg";
+
+       } else if (image == 2) {
+
+         images.src = "https://groentegroente.nl/wp-content/uploads/Wortels-1-S-D-698.jpg";
+
+       } else if (image == 3) {
+       } else if (image == 4) {
+           images.src = "https://static.thuisbezorgd.nl/images/restaurants/nl/NQN0O1O/products/kipsate.png";
+       } else if (image == 5) {
+           images.src = "https://kaddour.nl/img/uploaded/1407320255_1407320249_Kalfsrollade.png";
+       } else if (image == 6) {
+           images.src = "https://hetlandvansinterklaas.nl/wp-content/uploads/2016/06/het_land_van_sinterklaas-Sinterklaas-met-staf.png";
+       } else if (image == 7) {
+           images.src = "https://www.plus.nl/INTERSHOP/static/WFS/PLUS-Site/-/PLUS/nl_NL/product/L/870593.png";
+       } else if (image == 8) {
+           images.src = "https://www.dvc.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/v/l/vlag_verenigde_naties_rechtformaat_3_1.jpg";
+       }
+       ID = ID + 1;
+     }
+   }
+       </script>
+       <canvas id="canvas" height="1000px">
+</canvas>
+</body>
+</html>
